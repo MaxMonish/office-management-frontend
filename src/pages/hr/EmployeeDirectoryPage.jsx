@@ -37,7 +37,7 @@ function EmployeeDirectoryPage(){
           <img src = {
             emp.profileImage?.startsWith("http")
             ? emp.profileImage
-            : `http://localhost:5000/${emp.profileImage}`
+            : `https://office-management-backend-7kur.onrender.com/${emp.profileImage}`
           }
           alt = {emp.name}
           className = "employee-avatar"

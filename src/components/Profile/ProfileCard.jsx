@@ -15,7 +15,7 @@ function ProfileCard(){
         e.preventDefault();
         
         try{
-            const res = await axios.put("http://localhost:5000/api/profile", {name, email}, {
+            const res = await axios.put("https://office-management-backend-7kur.onrender.com/api/profile", {name, email}, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

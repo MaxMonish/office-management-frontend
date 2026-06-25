@@ -11,7 +11,7 @@ function ChangePassword(){
     const handlePasswordChange = async(e) => {
         e.preventDefault();
         try{
-            const res = await axios.put("http://localhost:5000/api/profile/change-password", {oldPassword, newPassword}, {
+            const res = await axios.put("https://office-management-backend-7kur.onrender.com/api/profile/change-password", {oldPassword, newPassword}, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

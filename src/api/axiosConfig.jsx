@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const axiosInstance = axios.create({baseURL: "http://localhost:5000/api"});
+const axiosInstance = axios.create({baseURL: "https://office-management-backend-7kur.onrender.com"});
 
 axiosInstance.interceptors.request.use((config) => {
     const token = localStorage.getItem("token");

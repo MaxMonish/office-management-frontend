@@ -3,5 +3,5 @@ export const getImageUrl = (path) => {
 
     if (path.startsWith("http")) return path;
 
-    return `http://localhost:5000${path}`;
+    return `https://office-management-backend-7kur.onrender.com${path}`;
 };

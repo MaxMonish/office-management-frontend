@@ -44,7 +44,7 @@ function EmployeeDetailsPage(){
       );
     }
     
-    const profileImageUrl = employee.profileImage?.startsWith("http") ? employee.profileImage : `http://localhost:5000/${employee.profileImage}`;
+    const profileImageUrl = employee.profileImage?.startsWith("http") ? employee.profileImage : `https://office-management-backend-7kur.onrender.com/${employee.profileImage}`;
     
     return(
     <MainLayout>

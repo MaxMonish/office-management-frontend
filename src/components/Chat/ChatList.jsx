@@ -23,7 +23,7 @@ function ChatList({users, onlineUsers, selectUser, selectedUserId}){
       
       return(
       <div key = {u._id} className = {`user-item ${isActive ? "active" : ""}`} onClick = {() => selectUser(u)}>
-        <img src = {u.profileImage ? (u.profileImage.startsWith("http") ? u.profileImage : `http://localhost:5000${u.profileImage}`) : "/default-avatar.png"} alt = {u.name} className = "chat-user-avatar"/>
+        <img src = {u.profileImage ? (u.profileImage.startsWith("http") ? u.profileImage : `https://office-management-backend-7kur.onrender.com${u.profileImage}`) : "/default-avatar.png"} alt = {u.name} className = "chat-user-avatar"/>
         <div className = "chat-user-info">
           <strong>{u.name}</strong>
           {isOnline ? <span className = "online">🟢 Online</span> : <span className = "offline">Last seen: {formatLastSeen(u.lastSeen)}</span>}
